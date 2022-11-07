@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import BaiTapGioHang from "./components/BaiTapGioHangRedux/BaiTapGioHang";
+import BookingMovie from "./components/BookingMovie/BookingMovie";
+import Game from "./components/DiceGame/Game";
+import ProductList from "./components/modalCar/ProductList";
+import GameOanTuTi from "./components/OanTuTi/GameOanTuTi";
+import DanhSachSanPham from "./components/Phone/DanhSachSanPham";
+import data from "./components/Shose/data.json";
+import ProductShose from "./components/Shose/ProductShose";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      {/* Shop Shose
+      <ProductShose data={data}></ProductShose> */}
+      {/* <DanhSachSanPham></DanhSachSanPham> */}
+      {/* <ProductList></ProductList> */}
+      {/* <BaiTapGioHang></BaiTapGioHang> */}
+      {/* <Game></Game> */}
+      {/* <GameOanTuTi></GameOanTuTi> */}
+      <BookingMovie></BookingMovie>
     </div>
   );
 }
